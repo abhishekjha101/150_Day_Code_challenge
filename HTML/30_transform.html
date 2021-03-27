@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transformation</title>
+</head>
+<style>
+	div
+	{
+	   width: 400px;
+	   height: 300px;
+	   box-shadow: 0 0 10px black;
+	   border-radius: 30px;
+	   margin: 100px auto;
+	   overflow: hidden;
+	   position: relative;
+
+	}
+	div img
+	{
+		width: inherit;
+		border-radius: inherit;
+		height: inherit;
+		filter: grayscale(100%);
+		transition: all 2s;
+
+	}
+	div:hover img
+	{
+		transform: scale(1.2,1.2);
+		filter: grayscale(0%);
+	}
+	div #wrapper
+	{
+		background-color: yellow;
+		position: absolute;
+		top:0px;
+		left: 0px;
+		width:inherit;
+		height: inherit;
+		border-radius: inherit;
+		transform: perspective(200px) rotateY(0deg);
+		transition: all 2s;
+		margin: 0px;
+		
+	}
+	div:hover #wrapper
+	{
+		transform: perspective(200px) translateY(-100%);
+	}
+	div:hover #left
+	{
+		transform: perspective(200px) rotateY(180deg);
+	}
+	
+	div #left
+	{
+		background-color: pink;
+		height: inherit;
+		width: 50%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		margin: 0px;
+		border-radius: 30px 0px 0px 30px;
+		transition: all 2s linear 0s;
+		transform-origin: left;
+	}
+	div #right
+	{
+		background-color: brown;
+		height: inherit;
+		width: 50%;
+		position: absolute;
+		top: 0%;
+		left:50%;
+		margin: 0px;
+		border-radius: 0px 30px 30px 0px;
+		transition: all 2s linear ;
+		transform-origin: right;
+	}
+	div:hover #right
+	{
+		transform: perspective(200px) rotateY(-180deg);;
+	}
+</style>
+<body>
+	<div>
+		<img src="C:\Users\Abhishek Jha\Desktop\Abc\images\shiva.JPG">
+		<div id="wrapper"></div>
+		<div id="left"></div>
+		<div id="right"></div> 
+	</div>
+</body>
+</html>

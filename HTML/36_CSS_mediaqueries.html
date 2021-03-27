@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS MEDIA QUERIES</title>
+</head>
+<style>
+	h1
+	{
+		text-align: center;
+	}
+	div h2
+	{
+		text-align: center;
+		display: none;
+	}
+	@media(max-width: 500px)
+	{
+		body
+		{
+			background-color: green;
+		}
+		div h2:nth child(1)
+		{
+			display: block;
+		}
+	}
+	@media(min-width: 501px) and (max-width: 720px)
+	{
+		body
+		{
+			background-color:red;
+		}
+		div h2:nth child(2)
+		{
+			display: block;
+		}
+	}
+	@media(min-width: 721px) and (max-width: 920px)
+	{
+		body
+		{
+			background-color: cyan;
+		}
+		div h2:nth child(3)
+		{
+			display: block;
+		}
+	}
+	@media(min-width: 921px)
+	{
+		body
+		{
+			background-color: blue;
+		}
+		div h2:nth child(4)
+		{
+			display: block;
+		}
+	}
+</style>
+<body>
+	<h1>Screensize:<span id="screen"></span></h1>
+	<div>
+		<h2>Small screen</h2>
+		<h2>Medium screen</h2>
+		<h2>Large screen</h2>
+	</div>
+	<script>
+		window.addEventListener('resize',function()
+		{
+			let screensize=window.innerwidth;
+			document.queryselector('#screen').innerText='${screensize}px';
+		})
+	</script>
+
+</body>
+</html>

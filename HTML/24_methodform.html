@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML FORMS</title>
+	<style>
+		div
+		{
+			background-color: lightsalmon;
+			width: 10%;
+			padding: 40px;
+			border-radius:20px;
+			box-shadow: 0 0 10px black; 
+		}
+	</style>
+</head>
+<body>
+	<div> 
+		<form>
+	        <label>UserName</label>
+			<input type="text">
+			<label>Password</label>
+			<input type="text">
+			<input type="Submit">
+		</form>
+	</div> 
+	<footer style="margin-bottom: 50px"></footer>
+	<hr>
+
+	<!-- text area tag -->
+		<div>
+			<form>
+				<label>Enter feedback</label>
+				<textarea cols="20" rows="3"></textarea>
+			</form>
+		</div> -->
+		<footer style="margin-bottom: 50px"></footer>
+		<hr>
+		
+		<!-- selection and option tags -->
+
+			<div>
+				<form>
+					<label>select a city</label>
+					<select>
+						<option>...select...</option>
+						<option>...Banglore...</option>
+						<option>...Mumbai...</option>
+						<option>...Delhi...</option>
+					</select>
+				</form>
+			</div>
+			<footer style="margin-bottom: 50px"></footer>  
+			<hr>
+			
+			<!-- Dtatlist Tag -->			
+			
+				<div>
+					<form>
+						<label>select a city</label>
+						<input list="city">
+						<data list="city">
+							<option>Banglore</option>
+							<option>Mysore</option>
+							<option>Manglore</option>
+						</datalist>
+					</form>
+				</div>
+				<footer style="margin-bottom: 50px"></footer> -->
+				<hr>
+
+				
+				<!-- html forms input tag types -->
+                <div>
+                 	<form>
+				<label>UserName</label>
+				<input type="text" name="">
+				<label>password</label>
+				<input type="password" name="">
+				<input type="submit" name="">
+				<input type="reset" name="">
+			</form>
+		</div>
+				<footer style="margin-bottom: 50px"></footer>
+				<hr>
+
+				<!-- Radio type --> 
+				<div>
+					<form>
+						<label>IS html easy?</label>
+						<input type="radio" name="r1">yes
+						<input type="radio" name="r1">No
+					</form>
+				</div>
+				<footer style="margin-bottom: 50px"></footer>
+				<hr>
+
+				<!-- Checkbox -->
+				<div>
+					<form>
+				<label>Select your hobbies</label>
+				<input type="checkbox">Coding
+				<input type="checkbox">Healthy
+				<input type="checkbox">Explore the place
+
+				</form>
+			</div>
+			<footer style="margin-bottom:50px"></footer>
+			<hr>
+
+			<!-- Html-5 form input types -->
+			<div>
+				<form>
+					<label>select a color</label>
+					<input type="color">
+				</form>
+			</div>
+			<footer style="margin-bottom:50px"></footer>
+			<hr>
+
+               <!-- How to select a date -->
+			<div>
+				<form>
+					<label>select a date</label>
+					<input type="date">
+				</form>
+			</div>
+			<footer style="margin-bottom:50px"></footer>
+			<hr>
+
+			<!-- How to select date and time -->
+			<div>
+				<form>
+					<label>select a date and time</label>
+					<input type="date time-local">
+				</form>
+			</div>
+			<footer style="margin-bottom:50px"></footer>
+			<hr>
+
+			<!-- Mobile Number -->
+			<div>
+				<form>
+					<label>Enter mobile number</label>
+					<input type="number">
+				</form>
+			</div>
+			<footer style="margin-bottom:50px"></footer>
+			<hr>
+
+			<!-- Email registration -->
+			<div>
+				<form novalidation="no validate">   <!-- we can use without novalidation="no validate"   --> 
+					<label>Enter Email</label>
+					<input type="email">
+					<input type="submit" name=" ">	
+				</form>
+			</div>
+			<footer style="margin-bottom:50px"></footer>
+			<hr>
+
+			<!-- week concept -->
+			<div>
+				<form>
+					<label>Enter week</label>
+					<input type="week">
+				</form>
+			</div>
+            <footer style="margin-bottom:50px"></footer>
+            <hr>
+
+            <!-- How to Enter time concept -->
+            <div>
+            	<form>
+            		<label>Enter time</label>
+            		<input type="time">
+            	</form>
+            </div>
+            <footer style="margin-bottom:50px"></footer>
+            <hr>
+
+            <!-- form special Attribute concept -->
+            <div>
+            	<form>
+            		<label>Enter UserName</label>
+            		<input type="text" value="Abhishek">
+            		<input type="submit">
+            	</form>
+            </div>
+            <footer style="margin-bottom:50px"></footer>
+            <hr>
+
+            <!-- readonly userName -->
+            <div>
+            	<form>
+            		<label>Enter UserName</label>
+            		<input type="text" name="Abhishek" readonly>
+            		<input type="submit">
+            	</form>
+            </div>
+            <footer style="margin-bottom:50px"></footer>
+            <hr>
+
+            <!-- disabled UserName -->
+             <div>
+            	<form>
+            		<label>Enter UserName</label>
+            		<input type="text" placeholder="Abhishek" readonly disabled>
+            		<input type="submit">
+            	</form>
+            </div>
+            <footer style="margin-bottom:50px"></footer>
+            <hr>
+
+            <!-- placeholder Concept -->
+             <div>
+            	<form>
+            		<input type="text" placeholder="Enter UserName">
+            		<input type="submit">
+            	</form>
+            </div>
+            <footer style="margin-bottom:50px"></footer>
+</body>
+</html>

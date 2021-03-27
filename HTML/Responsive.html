@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS FULL LANDING PAGE</title>
+	<style>
+		body
+		{
+			/*background-image: url("C:/Users/Abhishek Jha/Desktop/Abc/images/pic1.jpg");*/
+            margin: 0px;
+		}
+		#main-nav
+		{
+			background-color: black;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		#main-nav h1
+		{
+			color: white;
+			margin: 0px;
+		}
+		#main-nav #nav-items a
+		{
+			color: white;
+			text-decoration: none;
+			margin: 20px;
+			padding: 6px 17px;
+		}
+		#main-nav #nav-items a:hover
+		{
+			background-color: orange;			
+			border-radius: 20px;
+			box-shadow: 0 0 10px white;
+		}
+		/*FULL LANDING PAGE*/
+		#main-content
+		{ 
+			background: white url('C:/Users/Abhishek Jha/Desktop/Abc/images/pic1.jpg') no-repeat scroll center;
+			background-size:cover;
+			height:100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		#main-content h2
+		{
+			margin: 0px;
+			font-size: 30px;
+		}
+		#main-content  p
+		{
+			font-size: 16px;
+			max-width: 400px;
+			height: auto;
+		}
+		#main-content  button
+		{
+			background-color: orange;
+			padding: 5px 30px;
+			border:none;
+			outline: none;
+			box-shadow: 0 0 10px white;
+		}
+		@media(max-width: 850px)
+		{
+			#main-nav
+			{
+				flex-direction: column;
+			}
+			#nav-items
+			{
+				margin: 2px;
+				margin-bottom: 56px;
+			}
+		}
+		@media(min-width: 500px) and (max-width: 720px)
+		{
+			#main-nav
+			{
+				flex-direction: column;
+			}
+			#nav-items a
+			{
+				margin: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav id="main-nav">
+		<h1><span style="color: orange">jspiders</span>Institute</h1>
+		<div id="nav-items">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact us</a>
+		</div>
+	</nav>
+	<div id="main-content">
+			<h2>Welcome to <span style="color: orange">UI Technoligies</span></h2>
+			<p>User experience marks the top priority for almost every business in the market today. As a beginner in the developer world, you would have come across frequently that even the brief that you were given for your project, mentioned the simplicity of its user interface that it should feature. It doesn’t matter how complex are the functions and background operations happening alongside. What the users see and get to experience has to be a seamless and smooth execution.</p>
+			<button>Read More</button>
+	</div>
+</body>
+</html>
