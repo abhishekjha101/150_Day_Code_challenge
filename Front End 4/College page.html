@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Layouts</title>
+     <linkrel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="layout.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<style>
+	body
+	{
+		margin: 0px;
+	}
+	header,footer
+	{
+		background:linear-gradient(45deg,orange,limegreen,blue);
+		padding: 20px;
+	}
+	header h1
+	{
+		margin: 0px;
+		font-size: 40px;
+		color: white;
+		text-align: left;
+	}
+	header img
+	{
+		margin-left:1335px;
+		/*float: right;*/
+		border-radius: 100px;
+		margin-top: -63px;
+		width: 150px;
+		height: 140px;
+
+	}
+	/*Navbar Styles*/
+	nav
+	{
+		background:linear-gradient(45deg,blue,green,orange);
+		padding: 10px;
+	}
+	nav a
+	{
+		color: black;
+		text-decoration: none;
+		font-size: 24px;
+		margin: 20px 40px;	
+		padding: 50px;
+	}
+	/*.fa
+	{
+	    padding: 60px;
+	}*/
+	/*Side bar*/
+	aside
+	{
+		background:linear-gradient(45deg,coral,limegreen,cyan);
+		width: 200px;
+		text-align: center;
+		height: 714px;
+		float: left;
+		position: sticky;
+		top: 0px;
+	}
+	aside a
+	{
+		text-decoration: none;
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		padding: 10px 20px;
+	}
+	aside a:hover
+	{
+		background:linear-gradient(45deg,coral,red,blue);
+		border-radius: 20px;
+		box-shadow: 0 0 10px blue;
+	}
+	/*Section*/
+	section
+	{
+		background:linear-gradient(45deg,blue,orange,green);
+		color: white;
+		margin-left: 200px;
+	}
+	#html{
+		margin-top:0px;
+	}
+	section article h2
+	{
+		margin: 0px;
+	}
+	section article
+	{
+		background:linear-gradient(45deg,darkslategrey,violet);
+		padding: 20px;
+		margin: 5px;
+		border-radius: 20px; 
+	}
+	section article p
+	{
+		padding: 5px;
+	}
+	footer
+	{
+		margin-left: 200px;
+		text-align: center;
+	}
+</style>
+<body>
+	<!-- Main Header -->
+	<header>
+		<h1 class="animate__animated animate__zoomInLeft">Priyadarshini College Of Engineering</h1>
+	</header>
+	<!-- Main Navbar -->
+	<nav class="animate__animated animate__zoomInLeft">
+		<a href="#"><span class="fa fa-home"></span>Home</a>
+		<a href="#"><span class="fa fa-newspaper"></span>News</a>
+		<a href="#"><span class="fa fa-graduation-cap">Courses</span></a>
+		<a href="#"><span class="fa fa-id-card"></span>About</a>
+		<a href="#"><span class="fa fa-envelope"></span>Contact Us</a>
+	</nav>
+	<!-- Side bar -->
+	<aside>
+		<a href="#html">HTML</a>
+		<a href="#css">CSS</a>
+		<a href="#datascience">DATASCIENCE</a>
+		<a href="#jquery">JQUERY</a>
+		<a href="#python">PYTHON</a>
+		<a href="#javascript">JAVASCRIPT</a>
+		<a href="#bootstrap">BOOTSTRAP</a>
+		<a href="#java">JAVA</a>
+	</aside>
+	<!-- Main Section -->
+	<section>
+		<article id="html">
+			<h2>HTML</h2>
+			<p>The rise of the internet within mainstream culture is largely correlated with its history as a visual medium. Like many other computer systems and applications, it took a graphic interface to get the general population to start to understand the internet’s potential. The personal computer would not have proliferated throughout our households and work environments without the display monitor, and still did not become widely used until electronic spreadsheets, word processors and video games started attracting users. Similarly, users did not start buying into the World Wide Web until the visual-oriented web browser started coming into its own in the early 1990s. And since that time, even though there have been dramatic improvements in web technology and aesthetics, some of the earliest web design techniques have persevered throughout the years.</p>
+			<p>The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.
+
+Another version, XHTML, was a rewrite of HTML as an XML language. XML is a standard markup language that is used to create other markup languages. Hundreds of XML languages are in use today, including GML (Geography Markup Language), MathML, MusicML, and RSS (Really Simple Syndication). Since each of these languages was written in a common language (XML), their content can easily be shared across applications. This makes XML potentially very powerful, and it's no surprise that the W3C would create an XML version of HTML (again, called XHTML). XHTML became an official standard in 2000, and was updated in 2002. XHTML is very similar to HTML, but has stricter rules. Strict rules are necessary for all XML languages, because without it, interoperability between applications would be impossible. You'll learn more about the differences between HTML and XHTML in Unit 2.
+
+Most pages on the Web today were built using either HTML 4.01 or XHTML 1.0. However, in recent years, the W3C (in collaboration with another organization, the WHATWG), has been working on a brand new version of HTML, HTML5. Currently (2011), HTML5 is still a draft specification, and is not yet an official standard. However, it is already widely supported by browsers and other web-enabled devices, and is the way of the future. Therefore, HTML5 is the primary language taught in this course.</p>
+</article>
+<article id="css">
+	<h2>CSS</h2>
+	<p>The saga of CSS starts in 1994. Håkon Wium Lie works at CERN – the cradle of the Web – and the Web is starting to be used as a platform for electronic publishing. One crucial part of a publishing platform is missing, however: There is no way to style documents. For example, there is no way to describe a newspaper-like layout in a Web page. Having worked on personalized newspaper presentations at the MIT Media Laboratory, Håkon saw the need for a style sheet language for the Web.
+
+Style sheets in browsers were not an entirely new idea. The separation of document structure from the document's layout had been a goal of HTML from its inception in 1990. Tim Berners-Lee wrote his NeXT browser/editor in such a way that he could determine the style with a simple style sheet. However, he didn't publish the syntax for the style sheets, considering it a matter for each browser to decide how to best display pages to its users. In 1992, Pei Wei developed a browser called Viola, which had its own style sheet language.</p>
+<p>When you think of HTML and CSS, you probably imagine them as a package deal. But for years after Tim Berners-Lee first created the World Wide Web in 1989, there was no such thing as CSS. The original plan for the web offered no way to style a website at all.
+
+
+There’s a now-infamous post buried in the archives of the WWW mailing list. It was written by Marc Andreessen in 1994, who would go on to co-create both the Mosaic and Netscape browsers. In the post, Andreessen remarked that because there was no way to style a website with HTML, the only thing he could tell web developers when asked about visual design was, “sorry you’re screwed.”</p>
+</article>
+ <article id="datascience">
+ 	<h2>DATASCIENCE</h2>
+ 	<p>The story of how data scientists became sexy is mostly the story of the coupling of the mature discipline of statistics with a very young one--computer science.  The term “Data Science” has emerged only recently to specifically designate a new profession that is expected to make sense of the vast stores of big data. But making sense of data has a long history and has been discussed by scientists, statisticians, librarians, computer scientists and others for years. The following timeline traces the evolution of the term “Data Science” and its use, attempts to define it, and related terms. </p>
+ 	<p>1962 John W. Tukey writes in “The Future of Data Analysis”: “For a long time I thought I was a statistician, interested in inferences from the particular to the general. But as I have watched mathematical statistics evolve, I have had cause to wonder and doubt… I have come to feel that my central interest is in data analysis… Data analysis, and the parts of statistics which adhere to it, must…take on the characteristics of science rather than those of mathematics… data analysis is intrinsically an empirical science… How vital and how important… is the rise of the stored-program electronic computer? In many instances the answer may surprise many by being ‘important but not vital,’ although in others there is no doubt but what the computer has been ‘vital.’” In 1947, Tukey coined the term “bit” which Claude Shannon used in his 1948 paper “A Mathematical Theory of Communications.” In 1977, Tukey published Exploratory Data Analysis, arguing that more emphasis needed to be placed on using data to suggest hypotheses to test and that Exploratory Data Analysis and Confirmatory Data Analysis "can—and should—proceed side by side."</p>
+ </article>
+ <article id="jquery">
+ 	<h2>JQUERY</h2>
+ 	<p>jQuery is a Javascript library that takes this motto to heart: Writing Javascript code should be fun. jQuery achieves this goal by taking common, repetitive tasks, stripping out all the unnecessary markup, and leaving them short, smart and understandable.
+
+jQuery had two main value propositions. The first was to provide an ergonomic API for manipulating a webpage. In particular, it provided powerful methods for selecting elements.
+
+Beyond selecting elements just based on their ids or classes, jQuery allowed for complex expressions, like selecting elements based on their relationship with other elements:</p>
+<p>Browser differences and limitations have become less important for several reasons. The first is that standardization has improved. The major browser vendors (Apple, Google, Microsoft, and Mozilla) collaborate on web standards through the Web Hypertext Application Technology Working Group.
+
+While browsers still differ in significant ways, the vendors at least have a method to find and develop common ground rather than waging nonstop war with each other. Accordingly, browser APIs have become more capable. For example, the Fetch API can replace jQuery’s Ajax functions:</p>
+ </article>
+ <article id="python">
+ 	<h2>PYTHON</h2>
+ 	<p>Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system. Its implementation began in December 1989.</p>
+ 	<p>Writing the code is the most effective and robust way to learn Python. First, try to write code on paper and run in mind (Dry Run) then move to the system. Writing code on paper will help us get familiar quickly with the syntax and the concept store in the deep memory. While writing the code, try to use proper functions and suitable variables names.
+
+There are many editors available for Python programming which highlights the syntax related issue automatically. So we don't need to pay lot of attention of these mistakes.</p>
+ </article>
+ <article id="javascript">
+ 	<h2>JAVASCRIPT</h2>
+ 	<p>JavaScript was created at Netscape Communications by Brendan Eich in 1995. Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web browser, Netscape Navigator. Initially known as LiveScript, Netscape changed the name to JavaScript so they could position it as a companion for the Java language, a product of their partner, Sun Microsystems. Apart from some superficial syntactic similarities, though, JavaScript is in no way related to the Java programming language.
+
+After its release, more and more browsers started adding JavaScript support. Still, for much of its history JavaScript was not regarded as a serious programming language. Its earliest releases suffered from notable performance and security issues, but developers had no alternatives. If they wanted to run programs in the browser, they had to use JavaScript.</p>
+<p>Soon after, Ryan Dahl released an open-source, cross-platform environment called Node.js. It provided a way to run JavaScript code from outside a browser. It freed JavaScript from the browser's confines and led directly to JavaScript's current popularity. Today, you can use JavaScript to write all kinds of applications, including browser, server, mobile, and desktop applications. Most major online companies today, including Facebook, Twitter, Netflix, and Google, all use JavaScript in their products.</p>
+ </article>
+ <article id="bootstrap">
+ 	<h2>BOOTSTRAP</h2>
+ 	<p>Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external guidance.</p>
+ 	<p>Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+
+"A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.</p>
+ </article>
+ <article id="java">
+ 	<h2>JAVA</h2>
+ 	<p>The history of Java is very interesting. Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was suited for internet programming. Later, Java technology was incorporated by Netscape.</p>
+ 	<p>The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.
+
+James Gosling - founder of java
+Currently, Java is used in internet programming, mobile devices, games, e-business solutions, etc. There are given significant points that describe the history of Java.</p>
+ </article>	
+	</section>
+	<footer>
+		<h2>CopyRight&copy; :2021</h2>
+		<p>All Rights Are Reserved</p>
+		<small>Developed & Maintained By Abhishek</small>
+	</footer>
+</body>
+</html>
